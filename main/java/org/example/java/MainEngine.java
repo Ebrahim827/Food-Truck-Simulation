@@ -230,12 +230,12 @@ public class MainEngine extends Application {
 
 
 
-    @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Panel.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
-    }
+  @Override
+public void start(Stage stage) throws Exception {
+    FXMLLoader fxmlLoader = new FXMLLoader(MainEngine.class.getResource("Panel.fxml"));
+    Scene scene = new Scene(fxmlLoader.load());
+    stage.setTitle("Hello!");
+    stage.setScene(scene);
+    stage.show();
+}
 }
